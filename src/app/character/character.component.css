@@ -1,0 +1,51 @@
+.listContainer{
+    margin: auto;
+    width: 45%;
+    background-color:black;
+}
+.itemInList{
+    background-color: black;
+    color: black;
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    width: auto;
+    margin: 0px;
+    padding-left: 20px;
+    font-size: 1.4em;
+}
+ul{
+    margin: 0px;
+    list-style-type: none;
+}
+.searchbarContainer{
+    text-align: center;
+}
+::placeholder{
+    background-color: gray;
+    color: yellow;
+}
+.searchbar{
+    background-color: gray;
+    text-align: center;
+    font-size: 1.4em;
+    color: yellow;
+    width: 35%;
+}
+.characterName{
+    margin: 0px;
+    font-size: 1.6em;
+    padding-top: 5px;
+    color: yellow;
+}
+.characterInfo{
+    
+    color:yellow;
+    background-color: black;
+    padding: 5px;
+    border-style: dotted;
+    border-color: yellow;
+    border-radius: 5px;
+    border-width: 2px;
+}

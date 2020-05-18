@@ -1,0 +1,23 @@
+<div class="searchbarContainer">
+    <input type="text" #myinput (input)="filterPeople(myinput.value)" class="searchbar" name="searchbar"
+        placeholder="Search for a character" />
+
+</div>
+<hr>
+<div class="listContainer">
+    <ul id="charactersList">
+        <li class="itemInList" *ngFor="let character of filteredPeoples, let i = index" (click)="showInfo(i)">
+            <h4 class="characterName">{{character.name}}</h4>
+
+            <div *ngIf="show[i]" class="characterInfo">
+                <p>Heigth: {{character.height}}</p>
+                <p>Mass: {{character.mas}}</p>
+                <p>Hair: {{character.hair_color}}</p>
+                <p>Skin: {{character.skin_color}}</p>
+                <p>Eye: {{character.eye_color}}</p>
+                <p>Birth year: {{character.birth_year}}</p>
+                <p>Gender: {{character.gender}}</p>
+            </div>
+        </li>
+    </ul>
+</div>
